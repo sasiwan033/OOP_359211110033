@@ -17,7 +17,7 @@ public class TestMethods {
     }//B
     //type 3
     public static int C (int x,int y){
-    System.out.print("Hello C"+number);
+    System.out.println("Hello C"+number);
         return x+y;
     }//C
 
@@ -26,7 +26,7 @@ public class TestMethods {
        // clling method
       //  A();
       //  B(10);
-       int number C(10,20);
+       int number = C(10,20);
        System.out.println(number);
        System.out.println(C(50,50));
        //local variable
