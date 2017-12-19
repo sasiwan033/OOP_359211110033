@@ -13,10 +13,19 @@ public class InputDataToArray {
         int num[] = new int[MAX];
         num = inputData(num);
         ShowData(num);
-
+summation(num);
 
 
     }//main
+
+    private static void summation(int[] num) {
+        int total = 0;
+        for (int i=0;i<num.length;i++){
+            total += num[i];
+        }
+        System.out.println("\nThe summstion of "+"value in array is: "+total);
+        System.out.println("the average value "+"in array is: "+total/MAX);
+    }
 
     private static void ShowData(int[] num) {
         System.out.println("Data in array: ");
