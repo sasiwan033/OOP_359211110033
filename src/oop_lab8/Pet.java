@@ -1,6 +1,7 @@
 package oop_lab8;
 
-public class Pet {
+public abstract class Pet {
+    String s;
     private String name;
     private int age;
 
@@ -8,14 +9,18 @@ public class Pet {
         this.name = name;
         this.age = age;
     }
+    protected void myPet(){
+        System.out.println(this.name);
+    }
+    //Abstract Method
+    public abstract void makeNoise();
 
     @Override
     public String toString() {
-        return "" "\
-        Pet {
-            name = '$name',
-                    age = $age
-        } "" "
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     public String getName() {
